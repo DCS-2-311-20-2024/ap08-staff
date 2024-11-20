@@ -62,6 +62,10 @@ export function getCamera() {
 
 // 車の設定
 export function setCar(scene, car) {
+    const SCALE = 0.01;
+    car.position.copy(origin);
+    car.scale.set(SCALE,SCALE,SCALE);
+    scene.add(car);
 }
 
 // Windowサイズの変更処理
